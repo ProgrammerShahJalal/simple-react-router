@@ -7,6 +7,7 @@ import Friends from './components/friends/Friends';
 import Header from './components/Header/Header';
 import Home from './components/home/Home';
 import NotFound from './components/notFound/NotFound';
+import PostDetail from './components/Posts/PostDetail/PostDetail';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         <Switch>
           <Route path='/friend/:friendId'>
             <FriendDetail></FriendDetail>
+          </Route>
+          <Route path='/post/:postId'>
+            <PostDetail></PostDetail>
           </Route>
           <Route path='/home'>
             <Home></Home>
